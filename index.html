@@ -26,6 +26,10 @@
 <!-- This is a basic webpage that is not full of booby traps whatsoever!! -->
 
 <body>
+
+    <!-- Navbar gets injected here -->
+    <div id="nav-placeholder"></div>
+
   <div class="container">
     <h1>!buhtiG, olleH</h1>
     <p>This is my first web page using version control with Git and GitHub. I forked a repository to create this. A fork
@@ -74,7 +78,13 @@
     <img src="images/leo.jpg" class="rounded w-25" alt="WLeo funny face">
 
     <img src="images/wiibreak.gif" class="rounded-circle" alt="Wii Remote thrown at TV">
-  </div>
+      </div>
+
+    <script>
+        $("#nav-placeholder").load("navbar.html");
+    </script>
+    <!-- Bootstrap JS must go last -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
